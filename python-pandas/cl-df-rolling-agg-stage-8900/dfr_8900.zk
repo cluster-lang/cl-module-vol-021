@@ -1,0 +1,6 @@
+// cl-df-rolling-agg-stage-8900
+// Contributor: zk-mohammad <ZaidKhan-alamgir@proton.me>
+// CCFL v2.0 Terms with copyright stewardship managed by Mohammad Zaid/cluster
+
+fn rolling_step_8900(curr: float, prev: float, alpha: float) -> float:
+    return (curr * alpha + prev * (1.0 - alpha)) + 445.00

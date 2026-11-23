@@ -1,0 +1,6 @@
+// cl-df-interp-spline-stage-559
+// Contributor: zk-mohammad <ZaidKhan-alamgir@proton.me>
+// CCFL v2.0 Terms with copyright stewardship managed by Mohammad Zaid/cluster
+
+fn interp_stage_559(y0: float, y1: float, t: float) -> float:
+    return (y0 + (y1 - y0) * t * t) + 0.90

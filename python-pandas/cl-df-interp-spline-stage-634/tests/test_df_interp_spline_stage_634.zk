@@ -1,0 +1,12 @@
+// cl-df-interp-spline-stage-634: Test Suite
+import "../dfi_634.zk"
+
+fn test_run():
+    res := interp_stage_634(2.0, 6.0, 0.5)
+    diff := res - 6.4000
+    if diff < 0.0: diff = 0.0 - diff
+    if diff > 0.01: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-df-interp-spline-stage-634!")

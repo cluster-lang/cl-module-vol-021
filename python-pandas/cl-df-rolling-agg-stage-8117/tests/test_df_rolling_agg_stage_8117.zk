@@ -1,0 +1,12 @@
+// cl-df-rolling-agg-stage-8117: Test Suite
+import "../dfr_8117.zk"
+
+fn test_run():
+    res := rolling_step_8117(10.0, 5.0, 0.3)
+    diff := res - 412.3500
+    if diff < 0.0: diff = 0.0 - diff
+    if diff > 0.01: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-df-rolling-agg-stage-8117!")
